@@ -1,0 +1,23 @@
+{
+  "name": "puppeteerbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "NODE_ENV=developement  ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "test": "NODE_ENV=test ts-node src/server.ts",
+    "start": "NODE_ENV=production ts-node src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "puppeteer": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/puppeteer": "^5.4.3"
+  }
+}
